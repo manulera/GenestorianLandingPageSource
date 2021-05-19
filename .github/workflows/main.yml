@@ -1,11 +1,6 @@
 name: github pages
 
-on:
-  push:
-    branches:
-      - main  # Set a branch to deploy
-  pull_request:
-
+on: push
 jobs:
   deploy:
     runs-on: ubuntu-20.04
