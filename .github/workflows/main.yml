@@ -25,3 +25,5 @@ jobs:
           personal_token: ${{ secrets.GENESTORIAN_SITE }}
           publish_dir: ./public
           publish_branch: ./master
+          external_repository: manulera/manulera.github.io
+		  
