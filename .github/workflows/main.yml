@@ -25,4 +25,3 @@ jobs:
         with:
           personal_token: ${{ secrets.GENESTORIAN_SITE }}
           publish_dir: ./public
-		  
