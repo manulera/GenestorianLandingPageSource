@@ -1,6 +1,12 @@
 name: github pages
 on: push
 jobs:
+  print_context:
+    - name: Dump github context
+      run:   echo "$GITHUB_CONTEXT"
+      shell: bash
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
   deploy:
     if: ${{github.event.repository.name == 'manulera.github.io'}}
     runs-on: ubuntu-20.04
