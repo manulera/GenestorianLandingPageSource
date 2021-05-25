@@ -2,6 +2,9 @@ name: github pages
 on: push
 jobs:
   print_context:
+    name: Print context
+    runs-on: ubuntu-latest
+    steps:
     - name: Dump github context
       run:   echo "$GITHUB_CONTEXT"
       shell: bash
@@ -32,4 +35,3 @@ jobs:
           publish_dir: ./public
           publish_branch: master
           external_repository: manulera/manulera.github.io
-          
