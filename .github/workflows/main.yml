@@ -2,6 +2,7 @@ name: github pages
 on: push
 jobs:
   print_context:
+    if: ${{0}} # If you want to access the context
     name: Print context
     runs-on: ubuntu-latest
     steps:
@@ -34,4 +35,4 @@ jobs:
           personal_token: ${{ secrets.GENESTORIAN_SITE }}
           publish_dir: ./public
           publish_branch: master
-          external_repository: manulera/manulera.github.io
+          external_repository: manulera/GenestorianLandingPageSource
