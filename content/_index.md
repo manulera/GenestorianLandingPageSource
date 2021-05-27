@@ -12,8 +12,6 @@ Genestorian documents and stores your collection of strains and recombinant DNA,
 
 It does so by generating new recombinant DNA and allele sequences _in silico_ from sequences in your local collection or genome databases.
 
-Test
-
 # Demo of the prototype
 
 Here is a demo of a very early-stage prototype of Genestorian. If you have some ideas or feedback, please [send an email](mailto:genestorian@gmail.com).
