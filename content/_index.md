@@ -10,19 +10,29 @@ Genestorian is an Open Source web application that allows researchers to documen
 
 Genestorian stores your collection of strains and recombinant DNA in a relational database.
 
-It records the genetic engineering steps followed to generate new entities from existing ones.
+It stores the genetic engineering steps followed to generate new entities from existing ones.
 
 Sequences of new entities are generated _in silico_ from sequences in your local collection or sequences retrieved from genome databases.
 
-# Share
+# Sharing better records with less effort
 
-The database schema of Genestorian can be exported to json format.
+Your cloning strategy can be exported graphically or as text.
 
-This can be converted into graphical diagrams or text describing your cloning strategy. These can be shared with colleagues and collaborators, and used in publications.
+One click to produce an unambiguous record of your cloning strategy to be used in a publication, or shared with colleagues and collaborators!
+
+Your data can be exported to json format, so you can write scripts to do virtually anything you want.
+
+# Why Open Source?
+
+The collection of recombinant DNA and strains is one of the most valuable assets of a laboratory.
+
+With an Open Source solution there are no proprietary file formats, changes on privacy policy nor company shut-downs and acquisitions to worry about!
 
 # Demo of the prototype
 
-Genestorian is at a very early stage of development.
+Genestorian is at a very early stage of development. It will initially focus on collections of recombinant DNA and yeast/fungi strains.
+
+We will keep the design of the tool as abstract as possible, so that it can incorporate the needs of multiple model organisms in the future.
 
 Here is a demo of a prototype of Genestorian. If you have some ideas or feedback, please [send an email](mailto:genestorian@gmail.com).
 
