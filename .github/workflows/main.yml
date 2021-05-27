@@ -36,3 +36,4 @@ jobs:
           publish_dir: ./public
           publish_branch: master
           external_repository: manulera/manulera.github.io
+          cname: www.genestorian.org
