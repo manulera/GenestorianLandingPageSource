@@ -27,7 +27,9 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo --minify --environment production # Some themes will prevent indexing if this is not set to production
+        env:
+          HUGO_ENV: production # For ananke theme not to include the noindex tag
+        run: hugo --minify --environment production
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
