@@ -1,0 +1,133 @@
+<!doctype html>
+<style>
+  /* svg circle {
+    r: 6;
+  } */
+
+  svg circle {
+    stroke-width: 0;
+  }
+  .strain {
+    fill: #FF8000;
+    color:#FF8000;
+    stroke: #B45F04;
+  }
+
+  .source-imported {
+    fill: gray;
+    color:gray;
+    stroke: black;
+  }
+
+  .source-genetics {
+    fill:  #72EB29;
+    color:  #72EB29;
+    stroke: #51A61E;
+  }
+
+  .source-mating
+ {
+  fill: #F983F2;
+  stroke: #B866B3;
+  color:  #F983F2;
+ }
+
+  #my_dataviz {
+  position: absolute;
+  text-align: left;
+  }
+body
+{
+  text-align: left;
+}
+  .inner-info {
+    opacity: 0;
+    visibility: hidden;
+    padding: 2px;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    background-size: auto;
+    font-size: 20px;
+    position: fixed;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .info {
+    position: fixed;
+  }
+
+  .legend {
+    position: fixed;
+    text-align: right;
+    right: 10px;
+  }
+  .filter {
+    position: fixed;
+    text-align: right;
+    right: 10px;
+    bottom: 10px;
+    width: 250px;
+  }
+input {
+  font-size: 20px;
+  background: transparent;
+
+}
+label {
+  font-size: 20px;
+}
+svg
+{
+  z-index:90;
+}
+div
+{
+  z-index: -1;
+}
+
+button
+{
+  background-color: rgb(94, 182, 166);
+}
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<html>
+
+<head>
+  <title>Getting Started</title>
+</head>
+
+<body>
+  <div id="my_dataviz">
+  </div>
+  <div class="info title">INFO
+  <div class="inner-info">
+  </div>
+  </div>
+
+  <div class="legend title"> LEGEND
+    <div class="inner-legend">
+      <div class="strain"> Strain </div>
+      <div class="source-mating"> Mating </div>
+      <div class="source-genetics"> Genetic modification </div>
+      <div class="source-imported"> Received </div>
+    </div>
+  </div>
+
+  <div class="filter title"><button id='filter-button'>FILTER</button>
+    <div class="inner-filter">
+      <div class='input-div'><label>Filter by genotype</label><input type="text" id="input-genotype" class="w3-input" value="ase1"></div>
+      <div class='input-div'><label>Filter by user</label><input type="text" id="input-user" class="w3-input"></div>
+    </div>
+  </div>
+  
+  <script src="bundle.js"></script>
+
+</body>
+
+</html>
