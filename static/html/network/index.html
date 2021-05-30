@@ -4,40 +4,43 @@
     r: 6;
   } */
 
+  .container {
+    text-align: center;
+
+  }
+
   .strain {
     fill: #FF8000;
-    color:#FF8000;
+    color: #FF8000;
     stroke: #B45F04;
   }
 
   .source-imported {
     fill: gray;
-    color:gray;
+    color: gray;
     stroke: black;
   }
 
+  .inner-filter {
+    display: inline-block;
+  }
+
   .source-genetics {
-    fill:  #72EB29;
-    color:  #72EB29;
+    fill: #72EB29;
+    color: #72EB29;
     stroke: #51A61E;
   }
 
-  .source-mating
- {
-  fill: #F983F2;
-  stroke: #B866B3;
-  color:  #F983F2;
- }
-
-  #my_dataviz {
-  position: absolute;
-  text-align: left;
+  .source-mating {
+    fill: #F983F2;
+    stroke: #B866B3;
+    color: #F983F2;
   }
-body
-{
-  text-align: left;
-}
+
+  
+
   .inner-info {
+    position: absolute;
     opacity: 0;
     visibility: hidden;
     padding: 2px;
@@ -45,48 +48,32 @@ body
     border-radius: 8px;
     pointer-events: none;
     background-size: auto;
-    font-size: 20px;
-    position: fixed;
-  }
-
-  .title {
-    
-  }
-
-  .info {
-    position: fixed;
+    font-size: x-large;
+    text-align: left;
   }
 
   .legend {
-    position: fixed;
-    text-align: right;
-    right: 10px;
+    text-align: left;
     font-size: x-large;
   }
-  
-input {
-  font-size: 20px;
-  background: transparent;
 
-}
-label {
-  font-size: 20px;
-}
-svg
-{
-  z-index:90;
-}
-div
-{
-  z-index: -1;
-}
+  input {
+    background: transparent;
 
-button
-{
-  background-color: rgb(94, 182, 166);
-}
+  }
+
+  svg {
+    z-index: 90;
+  }
+
+  div {
+    z-index: -1;
+  }
+
+  button {
+    background-color: rgb(94, 182, 166);
+  }
 </style>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <html>
 
@@ -95,30 +82,34 @@ button
 </head>
 
 <body>
-  <div id="my_dataviz">
-  </div>
-  <div class="info title">
-    <h1>Network view</h1>
-    <p>A network of strains with their relationships.<br>
-      Hover over them to see their genotype, drag them around.<br>
-    Filter them by genotype using the box below </p>
-    <div class="filter title">
-      <div class="inner-filter">
-        <div class='input-div'><label>Filter by genotype</label><input type="text" id="input-genotype" class="w3-input" value=""></div>
-        <div hidden class='input-div'><label>Filter by user</label><input type="text" id="input-user" class="w3-input"></div>
-      </div>
-      <button id='filter-button'>FILTER</button>
-    </div>
-  <div class="inner-info">
-  </div>
-  </div>
+  <div class="container">
+    <div class="info title">
+      <h1>Network view</h1>
+      <p>A network of strains with their relationships.<br>
+        Hover over them to see their genotype, drag them around.<br>
+        Filter them by genotype using the box below </p>
+      <div class="filter title">
+        <div class="inner-filter">
+          <div class='input-div'><input type="text" id="input-genotype" value=""><button
+              id='filter-button'>FILTER</button></div>
+          <div hidden class='input-div'><label>Filter by user</label><input type="text" id="input-user"
+              ></div>
+        </div>
 
-  <div class="legend title"> LEGEND
-    <div class="inner-legend">
-      <div class="strain"> Strain </div>
-      <div class="source-mating"> Mating </div>
-      <div class="source-genetics"> Genetic modification </div>
-      <div class="source-imported"> Received </div>
+      </div>
+    </div>
+    <div class="legend title"> LEGEND
+      <div class="inner-legend">
+        <span class="strain"> Strain </span>
+        <span class="source-mating"> Mating </span>
+        <span class="source-genetics"> Genetic modification </span>
+        <span class="source-imported"> Received </span>
+      </div>
+    </div>
+    <div>
+      <div class="inner-info"></div>
+      <div id="my_dataviz"></div>
+    </div>
     </div>
   </div>
 
