@@ -4,9 +4,6 @@
     r: 6;
   } */
 
-  svg circle {
-    stroke-width: 0;
-  }
   .strain {
     fill: #FF8000;
     color:#FF8000;
@@ -53,7 +50,7 @@ body
   }
 
   .title {
-    font-size: 30px;
+    
   }
 
   .info {
@@ -64,14 +61,9 @@ body
     position: fixed;
     text-align: right;
     right: 10px;
+    font-size: x-large;
   }
-  .filter {
-    position: fixed;
-    text-align: right;
-    right: 10px;
-    bottom: 10px;
-    width: 250px;
-  }
+  
 input {
   font-size: 20px;
   background: transparent;
@@ -99,13 +91,24 @@ button
 <html>
 
 <head>
-  <title>Getting Started</title>
+  <title>Network view</title>
 </head>
 
 <body>
   <div id="my_dataviz">
   </div>
-  <div class="info title">INFO
+  <div class="info title">
+    <h1>Network view</h1>
+    <p>A network of strains with their relationships.<br>
+      Hover over them to see their genotype, drag them around.<br>
+    Filter them by genotype using the box below </p>
+    <div class="filter title">
+      <div class="inner-filter">
+        <div class='input-div'><label>Filter by genotype</label><input type="text" id="input-genotype" class="w3-input" value=""></div>
+        <div hidden class='input-div'><label>Filter by user</label><input type="text" id="input-user" class="w3-input"></div>
+      </div>
+      <button id='filter-button'>FILTER</button>
+    </div>
   <div class="inner-info">
   </div>
   </div>
@@ -119,13 +122,6 @@ button
     </div>
   </div>
 
-  <div class="filter title"><button id='filter-button'>FILTER</button>
-    <div class="inner-filter">
-      <div class='input-div'><label>Filter by genotype</label><input type="text" id="input-genotype" class="w3-input" value="ase1"></div>
-      <div class='input-div'><label>Filter by user</label><input type="text" id="input-user" class="w3-input"></div>
-    </div>
-  </div>
-  
   <script src="bundle.js"></script>
 
 </body>
