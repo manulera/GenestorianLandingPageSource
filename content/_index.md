@@ -12,7 +12,7 @@ Genestorian stores your collection of strains and recombinant DNA in a relationa
 
 It stores the genetic engineering steps followed to generate new entities from existing ones.
 
-Sequences of new entities are generated _in silico_ from sequences in your local collection or sequences retrieved from genome databases.
+Genestorian generates the sequences of new entities _in silico_ from existing sequences in your local collection or sequences retrieved from genome databases.
 
 # Sharing better records with less effort
 
@@ -20,7 +20,7 @@ Your cloning strategy can be exported graphically or as text.
 
 One click to produce an unambiguous record of your cloning strategy to be used in a publication, or shared with colleagues and collaborators!
 
-Your data can be exported to json format, so you can write scripts to do virtually anything you want. Check out this [network view](/html/network/index.html) of small collection!
+Your data can be exported to json format, so you can write scripts to do virtually anything you want. Check out this [network view](/html/network/index.html) of a small collection!
 
 # Why Open Source?
 
