@@ -9,3 +9,15 @@ theme = "ananke"
       description = "A web application for model organism collections"
       body_classes = "sans-serif"
       post_content_classes = "sans-serif"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "roadmap"
+    name = "Roadmap"
+    title = "Roadmap"
+    url = "/roadmap/"
+    weight = -0
+
+[markup.goldmark.renderer]
+  unsafe = true

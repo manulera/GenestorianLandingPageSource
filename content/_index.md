@@ -1,6 +1,7 @@
 ---
 title: "Genestorian"
 description: "An Open Source web application for model organism collections"
+featured_image: "/images/genes.svg"
 ---
 # What is Genestorian?
 
