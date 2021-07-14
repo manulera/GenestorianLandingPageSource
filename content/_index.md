@@ -21,7 +21,7 @@ Your cloning strategy can be exported graphically or as text.
 
 One click to produce an unambiguous record of your cloning strategy to be used in a publication, or shared with colleagues and collaborators!
 
-Your data can be exported to json format, so you can write scripts to do virtually anything you want. Check out this [network view](/html/network/index.html) of a small collection!
+Your data can be exported to json format, so you can write scripts to do virtually anything you want. Check out this [network view](/html/network/index.html) of a strain collection, or this [web interface to document a cloning strategy](/html/web_interface/index.html)
 
 # Why Open Source?
 
@@ -34,6 +34,8 @@ With an Open Source solution there are no proprietary file formats, changes on p
 Genestorian is at a very early stage of development. It will initially focus on collections of recombinant DNA and yeast/fungi strains.
 
 We will keep the design of the tool as abstract as possible, so that it can incorporate the needs of multiple model organisms in the future.
+
+Want to know more? Have a look at the [roadmap]({{< ref "/roadmap" >}} "roadmap").
 
 Here is a demo of a prototype of Genestorian. If you have some ideas or feedback, please [send an email](mailto:genestorian@gmail.com).
 

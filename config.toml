@@ -9,7 +9,7 @@ theme = "ananke"
       description = "A web application for model organism collections"
       body_classes = "sans-serif"
       post_content_classes = "sans-serif"
-
+      custom_css = ["css/custom.css"]
 [menu]
 
   [[menu.main]]
