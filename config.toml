@@ -1,4 +1,4 @@
-baseURL = "http://genestorian.org/"
+baseURL = "https://genestorian.org/"
 languageCode = "en-us"
 title = "Genestorian"
 subtitle = "A web application for model organism collections"
