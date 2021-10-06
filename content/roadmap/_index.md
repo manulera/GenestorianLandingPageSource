@@ -1,8 +1,10 @@
 ---
 title: "Roadmap"
 featured_image: "/images/roadmap.svg"
+draft: true
 ---
-
+Coming soon
+<!--
 Genestorian is a project that will involve the development of:
 
 1. A standard file format to document genetic engineering steps
@@ -67,3 +69,4 @@ So now we have two genealogies to keep, that will be managed by two parts of the
 Here is a demo of a prototype of the web application. If you have some ideas or feedback, please [send an email](mailto:genestorian@gmail.com).
 
 {{< youtube 34GMuHpl7f0 >}}
+-->

@@ -21,7 +21,7 @@ Your cloning strategy can be exported graphically or as text.
 
 One click to produce an unambiguous record of your cloning strategy to be used in a publication, or shared with colleagues and collaborators!
 
-Your data can be exported to json format, so you can write scripts to do virtually anything you want. Check out this [network view](/html/network/index.html) of a strain collection, or this [web interface to document a cloning strategy](/html/web_interface/index.html)
+Your data can be exported to json and other formats, so you can write scripts to do virtually anything you want. Check out this [network view](/html/network/index.html) of a strain collection, or this [web interface to document a cloning strategy](/html/web_interface/index.html)
 
 # Why Open Source?
 
