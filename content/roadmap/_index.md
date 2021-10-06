@@ -1,7 +1,6 @@
 ---
 title: "Roadmap"
 featured_image: "/images/roadmap.svg"
-draft: true
 ---
 Coming soon
 <!--
