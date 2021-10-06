@@ -35,8 +35,6 @@ Genestorian is at a very early stage of development. It will initially focus on 
 
 We will keep the design of the tool as abstract as possible, so that it can incorporate the needs of multiple model organisms in the future.
 
-Want to know more? Have a look at the [roadmap]({{< ref "/roadmap" >}} "roadmap").
-
 Here is a demo of a prototype of Genestorian. If you have some ideas or feedback, please [send an email](mailto:genestorian@gmail.com).
 
 {{< youtube 34GMuHpl7f0 >}}
