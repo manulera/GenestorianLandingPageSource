@@ -35,6 +35,6 @@ Genestorian is at a very early stage of development. It will initially focus on 
 
 We will keep the design of the tool as abstract as possible, so that it can incorporate the needs of multiple model organisms in the future.
 
-You can find a prototype to illustrate the use-case of Genestorian on [github](https://github.com/manulera/YeastDatabase), and you can see a video of this prototype below. If you have some ideas or feedback, please [send an email](mailto:genestorian@gmail.com).
+You can find a [hosted prototype](https://prototype.genestorian.org) to illustrate the use-case of Genestorian, the code is on [github](https://github.com/manulera/YeastDatabase), and you can see a video of this prototype below. If you have some ideas or feedback, please [send an email](mailto:genestorian@gmail.com).
 
 {{< youtube 34GMuHpl7f0 >}}
