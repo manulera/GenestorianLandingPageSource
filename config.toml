@@ -13,11 +13,19 @@ theme = "ananke"
 [menu]
 
   [[menu.main]]
+    identifier = "internship"
+    name = "GSoC"
+    title = "GSoC"
+    url = "/internship/"
+    weight = 2
+
+  [[menu.main]]
     identifier = "roadmap"
     name = "Roadmap"
     title = "Roadmap"
     url = "/roadmap/"
-    weight = -0
+    weight = 1
+  
 
 [markup.goldmark.renderer]
   unsafe = true

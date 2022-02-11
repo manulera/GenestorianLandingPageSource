@@ -9,7 +9,7 @@
     {{ partial "i18nlist.html" . }}
     {{ if .Site.Menus.main }}
       {{ range .Site.Menus.main }}
-        <a class="f3 fw1 hover-white no-underline white-90 dib" href="{{ .URL }}" title="{{ .Name }} page">
+        <a class="f3 fw1 hover-white no-underline white-90 dib pa3" href="{{ .URL }}" title="{{ .Name }} page">
           {{ .Name }}
         </a>
       {{ end }}
