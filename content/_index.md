@@ -46,7 +46,7 @@ service:
     - title : "Browse your collection "
       images:
       - "images/browse_collection.svg"
-      content : "Easily find all the strains that contain a certain allele, and the resources used to create that allele. Export this information to share with others or for publication."
+      content : "Easily find all the strains that contain a certain allele, the resources used to create an allele, and much more. Export this information to share it with others or for publication."
       button:
         enable : true
         label : "See a prototype of this feature"
