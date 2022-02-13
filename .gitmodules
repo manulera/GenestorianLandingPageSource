@@ -1,3 +1,6 @@
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "themes/bigspring-light"]
+	path = themes/bigspring-light
+	url = https://github.com/themefisher/bigspring-light

@@ -2,15 +2,15 @@ baseURL = "https://www.genestorian.org/"
 languageCode = "en-us"
 title = "Genestorian"
 subtitle = "A web application for model organism collections"
-theme = "ananke"
+theme = "bigspring-light"
 
-[params]
-      background_color_class = "bg-blue"
-      description = "A web application for model organism collections"
-      body_classes = "sans-serif"
-      post_content_classes = "sans-serif"
-      custom_css = ["css/custom.css"]
 [menu]
+  [[menu.main]]
+    identifier = "contributing"
+    name = "Contributing"
+    title = "Contributing"
+    url = "/contributing/"
+    weight = 3
 
   [[menu.main]]
     identifier = "internship"

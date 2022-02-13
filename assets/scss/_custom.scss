@@ -1,0 +1,43 @@
+// This file is empty within the template
+// You can use it to override CSS from within your project
+
+.banner {
+    padding: 20px 0 50px;
+}
+
+a {
+    color:$primary-color;
+}
+
+.content {
+    a {
+        color:$primary-color;
+        &:hover {
+            color:darken($color: $primary-color, $amount: 10);
+        }
+    }
+    
+    ul {
+        li::before {
+            position: absolute;
+            content: '';
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background: $primary-color;
+            vertical-align: text-bottom;
+            top: 8px;
+        }
+    }
+    
+}
+
+a:hover {
+    color:darken($color: $primary-color, $amount: 10);
+}
+
+ul {
+    line-height: 1.7;
+
+}
+
