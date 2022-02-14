@@ -14,8 +14,8 @@ theme = "bigspring-light"
 
   [[menu.main]]
     identifier = "internship"
-    name = "GSoC"
-    title = "GSoC"
+    name = "Interships"
+    title = "Interships"
     url = "/internship/"
     weight = 2
 

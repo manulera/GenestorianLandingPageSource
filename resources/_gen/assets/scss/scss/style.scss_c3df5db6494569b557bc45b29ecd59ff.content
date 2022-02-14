@@ -558,6 +558,9 @@ a.post-title {
 a {
   color: #0AA8A7; }
 
+.content figure {
+  text-align: center; }
+
 .content a {
   color: #0AA8A7; }
   .content a:hover {
@@ -572,6 +575,24 @@ a {
   background: #0AA8A7;
   vertical-align: text-bottom;
   top: 8px; }
+
+.content .toc li::before {
+  position: absolute;
+  content: '';
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #0AA8A7;
+  vertical-align: text-bottom;
+  top: 11px; }
+
+.content .toc li {
+  padding-left: 13px; }
+
+.content p {
+  margin-bottom: 20px; }
+  .content p strong {
+    color: #0AA8A7; }
 
 a:hover {
   color: #077877; }

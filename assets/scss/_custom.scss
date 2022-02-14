@@ -10,6 +10,11 @@ a {
 }
 
 .content {
+
+    figure {
+        text-align: center
+    }
+
     a {
         color:$primary-color;
         &:hover {
@@ -29,7 +34,28 @@ a {
             top: 8px;
         }
     }
-    
+    .toc {
+        li::before {
+            position: absolute;
+            content: '';
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background: $primary-color;
+            vertical-align: text-bottom;
+            top: 11px;
+        }
+        li {
+            padding-left: 13px;
+        }
+    }
+    p {
+        margin-bottom: 20px;
+
+        strong {
+            color: $primary-color;
+        }
+    }
 }
 
 a:hover {
