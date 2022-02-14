@@ -14,8 +14,8 @@ theme = "bigspring-light"
 
   [[menu.main]]
     identifier = "internship"
-    name = "Interships"
-    title = "Interships"
+    name = "Internships"
+    title = "Internships"
     url = "/internship/"
     weight = 2
 

@@ -2,9 +2,9 @@
 title: "Internships"
 ---
 
-If you are here, you may be interested in doing an internship working on Genestorian.
+If you are here, you might be interested in doing an internship working on Genestorian.
 
-You may not know know much biology, but don't worry! An internship with us can also be an opportunity for you to learn about the fascinating world of genetics and genetic engineering. Here are some basics to understand the use-case we are trying to address.
+You might not know know much biology, but don't worry! An internship with us can also be an opportunity for you to learn about the fascinating world of genetics and genetic engineering. Here are some basics to understand the use-case we are trying to address.
 
 {{< table_of_contents >}}
 
@@ -33,12 +33,49 @@ Once we have our desired sequence, we can insert it or replace a fragment in the
 
 ## The problem we are solving
 
+We want to develop a web application for researchers to be able to track the **ancestry** of their plasmids and strains. Let's start with a practical example, depicted in the figure below.
+
+{{< figure src="/images/genealogies.svg" alt="genealogies" width="250px" margin="auto">}}
+
+First, we take a plasmid, and we replace a fragment of the 1st chromosome in the wild-type strain by a fragment from the plasmid. We have then generated:
+
+1. A new sequence / allele.
+2. A new strain.
+
+{{< figure src="/images/genealogies_1.svg" alt="genealogies_1" width="200px" margin="auto">}}
+
+Then, we take this newly generated strain, and we cross it sexually with a strain from our collection that has a non-wild-type allele in chromosome 3. Among the offspring, we will find all combinations of the parent alleles, and we select a cell that has both alleles in chrosome 1 and 3 to stablish a new strain. This time we have generated only:
+
+1. A new strain.
+
+{{< figure src="/images/genealogies_2.svg" alt="genealogies_2" width="200px" margin="auto">}}
+
+So, when we say ancestry we actually mean two things:
+
+* The ancestry of sequences: How new sequences (in alleles or recombinant DNA) were generated from existing ones.
+
+* The ancestry of strains: What alleles exist in a given strain, and how they were acquired.
+
+At this point, you are probably thinking: 🤔 Well, I am sure there is already an Open Standard to encode this information given that these operations are routinely done in **hundreds of laboratories** using cutting-edge technology, working on different model organisms, storing **millions of strains** used to study embryonic development, cancer, ageing, and other biological processes.
+
+<div class="alert alert-danger text-center mx-auto" role="alert" style="width:fit-content"><strong>🚨Spoiler alert🚨</strong><br>That is not the case</div>
+
+The inventories of strain collections are typically kept as plain text in spreadsheets or similar tables. This is prone to errors and inconsistency because genotypes are input manually as plain text.
+
+### How we want to solve it
+
+We want to extend the [Synthetic Biology Open Language (SBOL)](https://sbolstandard.org/), an open standard for the representation of DNA. SBOL currently has abstract functionality for linking entities to their ancestors through an experimental step, but no specific implementations of concrete experimental procedures that combine existing sequences exist. Basically, we can represent that `A` comes from `B`, but no software tools are available to systematically generate `B` from `A` by reading experimental information nor verify that `B` comes from `A` if the experimental information is provided. We want to implement this functionality, and make a web application where researchers can document the generation of strains and recombinant DNA. 
+
 ### What you can do during your internship
-<!-- 
 
+An important challenge for the project is to migrate data from spreadsheets to the database. You will develop a first version of a tool to perform the data refinement required to migrate from spreadsheet to the database. The task will require:
 
- Accessing allele sequences or tracing back the origin of a certain DNA fragment inserted in the genome, if possible at all, is laborious, unreliable, and depends on the documentation provided by previous researchers.
+* From a table where the genotypes of strains are represented as strings, identify the allele names.
+* See if those alleles correspond to known alleles for that organism (from lists that are available online).
+* Extract the information of in which strains a new allele was generated, and the relationships parent-child between strains. How this information is recorded in the spreadsheet (if it is recorded at all) will very likely vary.
+* Score the predictions depending on certainty.
+* Format those predictions os that they can be imported into the database.
+* (Optional) develop a system for users to validate or change the predictions.
+* (Optional) develop a web interface for users to input their data, browse through the predictions, and validate or change them there.
 
-One laboratory working on a model organism like yeast for around ten years can easily have a collection of around 10,000 strains, created by researchers in the lab or received from collaborators. The inventory of these collections is typically kept in a spreadsheet. This is prone to errors and inconsistency because the data is input manually. Additionally, as genetic engineering becomes more sophisticated, it becomes increasingly hard to reduce a complex genetic modification to a self-explanatory word, like "ase1Δ", so the exact modifications are described in a non-standardised way. Most model organisms can be sexually crossed, which means that new strains are generated by mating of existing strains. This results in alleles from the parents being also present in the children. The ancestry of a strain and the origin of the alleles contained in it, is only recorded within a laboratory's spreadsheet. Therefore, when a strain is published in a scientific journal or sent to a collaborator, the strain ancestry or the origin of its alleles is often lost. With hundreds of laboratories working on different model organisms, millions of strains used to study embryonic development, cancer, ageing, and other biological processes are stored in a non-standardised way that is not accessible to researchers outside the laboratory that created them and can become confusing even for the laboratory that created them.
-
-We will develop Genestorian, a web application that allows researchers to document the methods used to produce strains, and record the changes with respect to the reference gene sequence in a standardised way. This information will be stored in a relational database, where a link will exist between the resources used to generate the strain and the strain itself. This will allow researchers to quickly access the ancestry and progeny of a strain, and to know in which strains an allele is present, the sequence of the allele, and how it has been created. Genestorian will also allow exporting this information in a standardised manner to be readable by computers and incorporated into databases with minimal human supervision. Genestorian will thus facilitate the reproducibility, exchange and interpretation of genetic research by tracing results to specific DNA sequences.  -->
+Questions? Comments? [Send an email!](mailto:genestorian@gmail.com)

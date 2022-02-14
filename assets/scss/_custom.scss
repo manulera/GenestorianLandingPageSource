@@ -35,6 +35,9 @@ a {
         }
     }
     .toc {
+        ul {
+            margin-bottom: 0px;
+        }
         li::before {
             position: absolute;
             content: '';
@@ -47,6 +50,7 @@ a {
         }
         li {
             padding-left: 13px;
+            margin-bottom: 0px;
         }
     }
     p {

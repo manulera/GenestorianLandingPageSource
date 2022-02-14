@@ -576,6 +576,9 @@ a {
   vertical-align: text-bottom;
   top: 8px; }
 
+.content .toc ul {
+  margin-bottom: 0px; }
+
 .content .toc li::before {
   position: absolute;
   content: '';
@@ -587,7 +590,8 @@ a {
   top: 11px; }
 
 .content .toc li {
-  padding-left: 13px; }
+  padding-left: 13px;
+  margin-bottom: 0px; }
 
 .content p {
   margin-bottom: 20px; }
