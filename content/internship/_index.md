@@ -42,13 +42,13 @@ First, we take a plasmid, and we replace a fragment of the 1st chromosome in the
 1. A new sequence / allele.
 2. A new strain.
 
-{{< figure src="/images/genealogies_1.svg" alt="genealogies_1" width="200px" margin="auto">}}
+{{< figure src="/images/genealogies_1.svg" alt="genealogies_1" width="250px" margin="auto">}}
 
 Then, we take this newly generated strain, and we cross it sexually with a strain from our collection that has a non-wild-type allele in chromosome 3. Among the offspring, we will find all combinations of the parent alleles, and we select a cell that has both alleles in chrosome 1 and 3 to stablish a new strain. This time we have generated only:
 
 1. A new strain.
 
-{{< figure src="/images/genealogies_2.svg" alt="genealogies_2" width="200px" margin="auto">}}
+{{< figure src="/images/genealogies_2.svg" alt="genealogies_2" width="250px" margin="auto">}}
 
 So, when we say ancestry we actually mean two things:
 

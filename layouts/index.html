@@ -66,6 +66,16 @@
             {{ end }}
         {{ end }}
         {{ end }}
+        {{ if .button2.enable }}
+        <br><br>
+        {{ with .button2 }}
+            {{ if .external_url}}
+            <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+            {{ else }}
+            <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+            {{ end }}
+        {{ end }}
+        {{ end }}
       </div>
       <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0 text-center">
         <div {{if gt (len .images) 1}} class="slider" {{end}}>
@@ -93,6 +103,16 @@
         <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
+        {{ if .external_url}}
+            <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+            {{ else }}
+            <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+            {{ end }}
+        {{ end }}
+        {{ end }}
+        {{ if .button2.enable }}
+        <br><br>
+        {{ with .button2 }}
         {{ if .external_url}}
             <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
             {{ else }}

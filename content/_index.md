@@ -57,16 +57,14 @@ service:
     - title : "A work in progress"
       images:
       - "images/work_in_progress.svg"
-      content : "Genestorian is at a very early stage of development, but you can already get involved:
-      
-      * If you have some ideas or feedback.
-      
-      * If you want to contribute.
-      
-      * If you want to know more."
+      content : "Genestorian is at a very early stage of development, but you can already:"
       button:
         enable : true
-        label : "See how to get involved"
+        label : "Read about planned features"
+        link : "/info4researchers/"
+      button2:
+        enable : true
+        label : "Get involved"
         link : "/contributing/"
 
 

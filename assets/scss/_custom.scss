@@ -5,9 +5,7 @@
     padding: 20px 0 50px;
 }
 
-a {
-    color:$primary-color;
-}
+
 
 .content {
 
@@ -20,8 +18,19 @@ a {
         &:hover {
             color:darken($color: $primary-color, $amount: 10);
         }
+
+        &.btn {
+            color: $white;
+            border-bottom: inherit
+        }
     }
     
+    ol {
+        li::marker {
+            font-weight: bold;
+        }
+    }
+
     ul {
         li::before {
             position: absolute;
@@ -71,3 +80,50 @@ ul {
 
 }
 
+details {
+    padding: 20px 20px 0px 20px;
+    border: solid darken($color:$text-color, $amount: 0);
+    border-radius: 10px;
+}
+
+summary {
+    color: darken($color:$text-color, $amount: 0);
+
+}
+
+
+span.biological_resource {
+    color: #357EDD;
+    font-weight: bold;
+    border: solid;
+    border-width: 2px;
+    border-color: #357EDD;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+span.abstract_entity {
+    color: white;
+    font-weight: bold;
+    border: solid;
+    border-width: 2px;
+    border-color: #314354ff;
+    background-color: #647687ff;
+    border-radius: 0.4em;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+span.bioinformatic_resource {
+    color: white;
+    border: solid;
+    border-width: 2px;
+    border-color:black;
+    background-color: #357EDD;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

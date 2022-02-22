@@ -4,28 +4,37 @@ title = "Genestorian"
 subtitle = "A web application for model organism collections"
 theme = "bigspring-light"
 
+[params]
+  copyright="The content of this website is licensed under [CC BY SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Visit the [GitHub repository](https://github.com/manulera/GenestorianLandingPageSource) to access the source code."
+
 [menu]
   [[menu.main]]
     identifier = "contributing"
     name = "Contributing"
     title = "Contributing"
     url = "/contributing/"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     identifier = "internship"
     name = "Internships"
     title = "Internships"
     url = "/internship/"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     identifier = "roadmap"
     name = "Roadmap"
     title = "Roadmap"
     url = "/roadmap/"
-    weight = 1
+    weight = 2
   
+  [[menu.main]]
+    identifier = "info4researchers"
+    name = "Info for Researchers"
+    title = "Info for Researchers"
+    url = "/info4researchers/"
+    weight = 1
 
 [markup.goldmark.renderer]
   unsafe = true

@@ -10,3 +10,5 @@ git submodule update
 # Then just:
 hugo -D serve
 ```
+
+The content of this website is licensed [CC BY SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
