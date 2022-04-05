@@ -79,3 +79,5 @@ An important challenge for the project is to migrate data from spreadsheets to t
 * (Optional) develop a web interface for users to input their data, browse through the predictions, and validate or change them there.
 
 Questions? Comments? [Send an email!](mailto:genestorian@gmail.com)
+
+If you are planning to apply for a Google Summer of Code internship, please have a look at [this repo](https://github.com/manulera/genestorian_data_refinement) where you will find useful details for your application, and questions by other prospective applicants. You can follow or star the repository to see if further info is added.

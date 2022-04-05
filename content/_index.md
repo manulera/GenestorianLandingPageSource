@@ -2,7 +2,8 @@
 ####################### Banner #########################
 banner:
   title : "Genestorian"
-  image : "images/genes2.svg"
+#   Removed for clarity
+#   image : "images/genes2.svg"
   content : "An Open Source web application for model organism collections"
 
 ##################### Feature ##########################
