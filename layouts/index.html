@@ -57,6 +57,16 @@
       <div class="col-md-6 order-2 order-md-1">
         <h2 class="section-title">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
+        {{ if .mainbutton.enable }}
+        {{ with .mainbutton }}
+            {{ if .external_url}}
+            <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="btn-link" style="font-size: 120%">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+            {{ else }}
+            <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+            {{ end }}
+        {{ end }}
+        {{ end }}
+        <br><br>
         {{ if .button.enable }}
         {{ with .button }}
             {{ if .external_url}}

@@ -67,6 +67,12 @@ service:
         enable : true
         label : "Get involved"
         link : "/contributing/"
+      mainbutton:
+        enable : true
+        label : "Subscribe to the newsletter to get project updates"
+        link : "https://eepurl.com/h9-n71"
+        external_url: true
+
 
 
 ---
