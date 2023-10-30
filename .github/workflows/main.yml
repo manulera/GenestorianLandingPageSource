@@ -1,5 +1,7 @@
-name: github pages
-on: push
+name: deploy
+on:
+  push:
+  workflow_dispatch:
 jobs:
   print_context:
     if: ${{0}} # If you want to access the context
@@ -31,11 +33,17 @@ jobs:
           HUGO_ENV: production # For ananke theme not to include the noindex tag
         run: hugo --minify --environment production
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v2.0
         with:
-          personal_token: ${{ secrets.GENESTORIAN_SITE }}
-          publish_dir: ./public
-          publish_branch: master
-          external_repository: manulera/manulera.github.io
-          cname: www.genestorian.org
+          publish-dir: './public'
+          production-branch: master
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Deploy from GitHub Actions"
+          enable-pull-request-comment: false
+          enable-commit-comment: true
+          overwrites-pull-request-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        timeout-minutes: 1
