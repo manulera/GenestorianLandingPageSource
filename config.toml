@@ -6,6 +6,8 @@ theme = "bigspring-light"
 
 [params]
   copyright="The content of this website is licensed under [CC BY SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Visit the [GitHub repository](https://github.com/manulera/GenestorianLandingPageSource) to access the source code."
+  image="images/og_image.png"
+  description="Manage your plasmids, strains and cell lines."
 
 [menu]
   [[menu.main]]
@@ -28,7 +30,7 @@ theme = "bigspring-light"
     title = "Roadmap"
     url = "/roadmap/"
     weight = 2
-  
+
   [[menu.main]]
     identifier = "info4researchers"
     name = "Info for Researchers"
